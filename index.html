@@ -12,69 +12,68 @@
 
 <!-- Header Section -->
 
-<header>
-	<div class="logo">
+<header class="flex-container">
 		<img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-tea-cozy-logo.png" alt="Tea Cozy logo" />
-	</div>
 	<nav>
-		<ul>
 			<span><a href="#">Mission</a></span>
 			<span><a href="#">Featured Tea</a></span>
 			<span><a href="#">Locations</a></span>
-		</ul>
 	</nav>
 </header>
 
+<!-- Main Content -->
+
+<div class="main">
+
 <!-- Jumbotron Section -->
 
-<section class="jumbotron">
-	<div class="jumboimage">
-		<img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg" alt="A jar of loose leaf tea." />
-	</div>
+<div id="mission" class="flex-container">
 	<div class="headline">
 		<h2>Our Mission</h2>
 		<h4>Handpicked, Artisinally Curated, Free Range, Sustainable, Small Batch, Fair Trade, Organic Tea</h4>
 	</div>
-</section>
+</div>
 
 <!-- Menu Section -->
 
-<section class="menu">
+<div class="menu">
 	<div class="headline">
 		<h2>Tea of the Month</h2>
 		<h4>What's Steeping at The Tea Cozy?</h4>
 	</div>
-	<div class="tea image-content">
-		<img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-berryblitz.jpg" alt="Fall Berry Blitz Tea" />
-		<p class="description">Fall Berry Blitz Tea</p>
+	<div class="teas">
+		<div class="image-content">
+			<img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-berryblitz.jpg" alt="Fall Berry Blitz Tea" />
+			<p>Fall Berry Blitz Tea</p>
+		</div>
+		<div class=" image-content">
+			<img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-spiced-rum.jpg" alt="Spiced Rum Tea" />
+			<p>Spiced Rum Tea</p>
+		</div>
+		<div class="image-content">
+			<img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-donut.jpg" alt="Seasonal Donuts" />
+			<p>Seasonal Donuts</p>
+		</div>
+		<div class="image-content">
+			<img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-myrtle-ave.jpg" alt="Myrtle Ave Tea" />
+			<p>Myrtle Ave Tea</p>
+		</div>
+		<div class="image-content">
+			<img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-bedford-bizarre.jpg" alt="Bedford Bizarre Tea" />
+			<p>Bedford Bizarre Tea</p>
+		</div>
 	</div>
-	<div class=" tea image-content">
-		<img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-spiced-rum.jpg" alt="Spiced Rum Tea" />
-		<p class="description">Spiced Rum Tea</p>
-	</div>
-	<div class="tea image-content">
-		<img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-donut.jpg" alt="Seasonal Donuts" />
-		<p class="description">Seasonal Donuts</p>
-	</div>
-	<div class="tea image-content">
-		<img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-myrtle-ave.jpg" alt="Myrtle Ave Tea" />
-		<p class="description">Myrtle Ave Tea</p>
-	</div>
-	<div class="tea image-content">
-		<img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-bedford-bizarre.jpg" alt="Bedford Bizarre Tea" />
-		<p class="description">Bedford Bizarre Tea</p>
-	</div>
-</section>
+</div>
 
 <!-- Locations Section -->
 
-<section>
+<div id="locations">
 	<div class="headline">
 		<h2>Locations</h2>
 	</div>
 	<div class="locations">
 		<div class="left column">
-			<h4>Downtown</h4>
+			<h3>Downtown</h3>
 			<p class="location-description">
 				384 West 4th St<br />
 				<br />
@@ -84,7 +83,7 @@
 			</p>
 		</div>
 		<div class="middle column">
-			<h4>East Bayside</h4>
+			<h3>East Bayside</h3>
 			<p class="location-description">
 				3433 Phisherman's Avenue<br />
 				<br />
@@ -94,7 +93,7 @@
 			</p>
 		</div>
 		<div class="right column">
-			<h4>Oakdale</h4>
+			<h3>Oakdale</h3>
 			<p class="location-description">
 				515 Crescent Avenue<br />
 				<br />
@@ -104,17 +103,17 @@
 			</p>
 		</div>
 	</div>
-</section>
+</div>
 
 <!-- Contact Section -->
 
-<section class="contact">
+<div id="contact">
 	<div class="contact-info">
 		<h2>The Tea Cozy</h2>
-		<p>contact@theteacozy.com</p>
-		<p>917-555-8904</p>
+		<h5>contact@theteacozy.com</h5>
+		<h5>917-555-8904</h5>
 	</div>
-</section>
+</div>
 
 <!-- Footer Section -->
 
@@ -123,6 +122,8 @@
 		<p>copyright The Tea Cozy 2017</p>
 	</div>
 </footer>
+
+</div>
 
 </body>
 </html>

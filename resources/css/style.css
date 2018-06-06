@@ -1,19 +1,110 @@
 /* Universal Styles */
 
-html {
-	background-color: #000;
-}
-
 body {
-	margin: 0;
-	color: #fff;
+	margin: 0; 
+	color: seashell;
+	background-color: #000;
 	font-family: "Helvetica", sans-serif;
 	font-size: 22px;
-	color: seashell;
 	opacity: 0.9;
 	text-align: center;
 }
 
 a {
 	color: #fff;
+	text-decoration: underline;
+}
+
+.flex-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+/* Header Section */
+
+header {
+	position: fixed;
+	width: 100%;
+	z-index: 1;
+	height: 69px;
+	background-color: #000;
+	border-bottom: 1px solid seashell;
+	align-items: center;
+}
+
+header img {
+	height: 50px;
+	padding-left: 10px;
+}
+
+nav {
+	text-align: right;
+	flex-grow: 1;
+}
+
+nav span {
+	display: inline-block;
+	padding: 10px 20px;
+}
+
+/* Main Content */
+
+.main {
+	top: 69px;
+	width: 1200px;
+	padding-top: 100px;
+	opacity: 0.9;
+}
+
+/* Jumbotron Section */
+
+.jumbotron {
+	background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
+	height: 700px;
+}
+
+.headline {
+	background-color: #000;
+}
+
+/* Menu Section */
+
+.menu {
+	width: 1000px;
+
+}
+
+.menu.teas {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.menu img {
+	width: 300px;
+	height: 200px;
+	margin-bottom: 10px;
+}
+
+/* Locations Section */
+
+
+
+/* Contacts Section */
+
+
+
+/* Contact Section */
+
+
+
+/* Footer Section */
+
+footer {
+	padding-left: 20px;
+}
+
+footer p {
+	text-align: left;
 }
