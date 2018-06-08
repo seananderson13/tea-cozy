@@ -15,10 +15,18 @@ a {
 	text-decoration: underline;
 }
 
+h2 {
+	margin-bottom: 0px;
+}
+
+p {
+font-weight: bold;
+}
+
 .flex-container {
 	display: flex;
 	justify-content: center;
-	flex-wrap: wrap;
+	flex-flow: column wrap;
 }
 
 /* Header Section */
@@ -30,6 +38,7 @@ header {
 	height: 69px;
 	background-color: #000;
 	border-bottom: 1px solid seashell;
+	display: flex;
 	align-items: center;
 }
 
@@ -51,37 +60,44 @@ nav span {
 /* Main Content */
 
 .main {
+	position: relative;
 	top: 69px;
 	width: 1200px;
-	padding-top: 100px;
 	opacity: 0.9;
+	display: flex;
+	flex-flow: column wrap;
 }
 
-/* Jumbotron Section */
+/* Mission Section */
 
-.jumbotron {
-	background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
+#mission {
+	background-image: url("../images/img-mission-background.jpg");
 	height: 700px;
 }
 
-.headline {
+#mission-headline {
 	background-color: #000;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 150px;
+	width: 1200px;
 }
 
 /* Menu Section */
 
-.menu {
+#menu {
 	width: 1000px;
 
 }
 
-.menu.teas {
+#menu .teas {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	flex-wrap: wrap;
 }
 
-.menu img {
+#menu img {
 	width: 300px;
 	height: 200px;
 	margin-bottom: 10px;
@@ -89,15 +105,24 @@ nav span {
 
 /* Locations Section */
 
+#locations {
+	background-image: url("../images/img-locations-background.jpg");
+	height: 500px;
+}
 
 
-/* Contacts Section */
+.stores {
+	padding: 15px 40px;
+	display: flex;
+	justify-content: space-around;
+}
 
-
-
-/* Contact Section */
-
-
+.stores-column {
+	background-color: #000;
+	width: 300px;
+	height: 275px;
+	opacity: 1;
+}
 
 /* Footer Section */
 
