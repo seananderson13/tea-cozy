@@ -6,27 +6,22 @@ body {
 	background-color: #000;
 	font-family: "Helvetica", sans-serif;
 	font-size: 22px;
-	opacity: 0.9;
 	text-align: center;
 }
 
 a {
-	color: #fff;
-	text-decoration: underline;
+	color: seashell;
 }
 
-h2 {
-	margin-bottom: 0px;
-}
-
-p {
-font-weight: bold;
+h2, h3, h4 {
+	margin: 0px;
+	padding: 10px;
 }
 
 .flex-container {
 	display: flex;
 	justify-content: center;
-	flex-flow: column wrap;
+	flex-wrap: wrap;
 }
 
 /* Header Section */
@@ -38,7 +33,6 @@ header {
 	height: 69px;
 	background-color: #000;
 	border-bottom: 1px solid seashell;
-	display: flex;
 	align-items: center;
 }
 
@@ -54,18 +48,16 @@ nav {
 
 nav span {
 	display: inline-block;
-	padding: 10px 20px;
+	padding: 20px 10px;
 }
 
 /* Main Content */
 
 .main {
-	position: relative;
-	top: 69px;
+	padding-top: 69px;
 	width: 1200px;
 	opacity: 0.9;
-	display: flex;
-	flex-flow: column wrap;
+	margin: auto;
 }
 
 /* Mission Section */
@@ -73,34 +65,39 @@ nav span {
 #mission {
 	background-image: url("../images/img-mission-background.jpg");
 	height: 700px;
+	padding-top: 70px;
 }
 
 #mission-headline {
 	background-color: #000;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	height: 150px;
-	width: 1200px;
+	width: 100%;
+	margin: auto;
 }
 
 /* Menu Section */
 
 #menu {
 	width: 1000px;
-
+	height: 700px;
+	margin: auto;
+	padding-top: 70px;
 }
 
-#menu .teas {
-	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
-}
-
-#menu img {
-	width: 300px;
+.item img {
 	height: 200px;
-	margin-bottom: 10px;
+	margin: 10px;
+	display: block;
+}
+
+.item {
+	padding: 5px;
+}
+
+.item span {
+	display: block;
+	padding: 5px;
+	font-weight: bold;
+	text-align: center;
 }
 
 /* Locations Section */
@@ -108,8 +105,17 @@ nav span {
 #locations {
 	background-image: url("../images/img-locations-background.jpg");
 	height: 500px;
+	padding-top: 70px;
 }
 
+#location .flex-container {
+	margin: auto;
+	width: 1100px;
+}
+
+.flex-container.locations {
+	padding-top: 5px;
+}
 
 .stores {
 	padding: 15px 40px;
@@ -119,17 +125,27 @@ nav span {
 
 .stores-column {
 	background-color: #000;
+	padding: 10px;
+	margin: 5px 20px;
 	width: 300px;
-	height: 275px;
+	height: 250px;
 	opacity: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	flex-basis: 280px;
+}
+
+/* Contact Section */
+
+#contact {
+	height: 200px;
+	padding-top: 70px;
 }
 
 /* Footer Section */
 
 footer {
 	padding-left: 20px;
-}
-
-footer p {
 	text-align: left;
 }
